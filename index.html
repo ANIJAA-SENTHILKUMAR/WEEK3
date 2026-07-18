@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MovieVerse | Movie Gallery</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    background:#0d0d0d;
+    color:white;
+}
+
+/* Header */
+
+header{
+    background:#111;
+    padding:20px;
+    text-align:center;
+    border-bottom:3px solid #e50914;
+}
+
+header h1{
+    color:#e50914;
+    font-size:45px;
+    letter-spacing:3px;
+}
+
+header p{
+    margin-top:8px;
+    color:#cccccc;
+}
+
+/* Category */
+
+.category{
+    margin:40px;
+}
+
+.category h2{
+    color:#e50914;
+    margin-bottom:20px;
+    border-left:5px solid #e50914;
+    padding-left:10px;
+}
+
+/* Grid */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+/* Card */
+
+.card{
+
+    background:#1b1b1b;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    transition:0.4s;
+
+    box-shadow:0 0 10px rgba(0,0,0,.6);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 20px #e50914;
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+}
+
+.info{
+
+    padding:15px;
+
+}
+
+.info h3{
+
+    margin-bottom:10px;
+
+}
+
+.genre{
+
+    color:#bbbbbb;
+
+    font-size:14px;
+
+    margin-bottom:8px;
+
+}
+
+.rating{
+
+    color:gold;
+
+    font-weight:bold;
+
+}
+
+/* Footer */
+
+footer{
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:40px;
+
+    background:#111;
+
+    color:#bbbbbb;
+
+    border-top:3px solid #e50914;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🎬 MOVIEVERSE</h1>
+
+<p>Hollywood • Korean Movies • TV Shows • K-Dramas</p>
+
+</header>
+
+<!-- Hollywood -->
+
+<section class="category">
+
+<h2>Hollywood Movies</h2>
+
+<div class="gallery">
+
+<div class="card">
+<img src="E:\MERN STACK\WEEK3\inception.jpg">
+<div class="info">
+<h3>Inception</h3>
+<p class="genre">Sci-Fi • 2010</p>
+<p class="rating">⭐ 8.8/10</p>
+</div>
+</div>
+
+<div class="card">
+<img src="E:\MERN STACK\WEEK3\interstellar.jpg">
+<div class="info">
+<h3>Interstellar</h3>
+<p class="genre">Sci-Fi • Adventure</p>
+<p class="rating">⭐ 8.7/10</p>
+</div>
+</div>
+
+<div class="card">
+<img src="E:\MERN STACK\WEEK3\oppenheimer.jpeg">
+<div class="info">
+<h3>Oppenheimer</h3>
+<p class="genre">Biography • Drama</p>
+<p class="rating">⭐ 8.4/10</p>
+</div>
+</div>
+
+<div class="card">
+<img src="E:\MERN STACK\WEEK3\joker.jpeg">
+<div class="info">
+<h3>Joker</h3>
+<p class="genre">Crime • Thriller</p>
+<p class="rating">⭐ 8.4/10</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- Korean -->
+
+<section class="category">
+
+<h2>Korean Movies & Dramas</h2>
+
+<div class="gallery">
+
+<div class="card">
+<img src="E:\MERN STACK\WEEK3\parasite.jpeg">
+<div class="info">
+<h3>Parasite</h3>
+<p class="genre">Thriller</p>
+<p class="rating">⭐ 8.5/10</p>
+</div>
+</div>
+
+<div class="card">
+<img src="E:\MERN STACK\WEEK3\squidgame.jpg">
+<div class="info">
+<h3>Squid Game</h3>
+<p class="genre">Drama • Survival</p>
+<p class="rating">⭐ 8.0/10</p>
+</div>
+</div>
+
+<div class="card">
+<img src="E:\MERN STACK\WEEK3\goblin.jpg">
+<div class="info">
+<h3>Goblin</h3>
+<p class="genre">Fantasy • Romance</p>
+<p class="rating">⭐ 8.6/10</p>
+</div>
+</div>
+
+<div class="card">
+<img src="E:\MERN STACK\WEEK3\vincenzo.jpg">
+<div class="info">
+<h3>Vincenzo</h3>
+<p class="genre">Crime • Comedy</p>
+<p class="rating">⭐ 8.4/10</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- TV Shows -->
+
+<section class="category">
+
+<h2>Popular TV Shows</h2>
+
+<div class="gallery">
+
+<div class="card">
+<img src="E:\MERN STACK\WEEK3\breakingbad.jpeg">
+<div class="info">
+<h3>Breaking Bad</h3>
+<p class="genre">Crime</p>
+<p class="rating">⭐ 9.5/10</p>
+</div>
+</div>
+
+<div class="card">
+<img src="E:\MERN STACK\WEEK3\strangerthings.jpg">
+<div class="info">
+<h3>Stranger Things</h3>
+<p class="genre">Sci-Fi</p>
+<p class="rating">⭐ 8.7/10</p>
+</div>
+</div>
+
+<div class="card">
+<img src="E:\MERN STACK\WEEK3\lastofus.jpeg">
+<div class="info">
+<h3>The Last of Us</h3>
+<p class="genre">Action • Drama</p>
+<p class="rating">⭐ 8.8/10</p>
+</div>
+</div>
+
+<div class="card">
+<img src="E:\MERN STACK\WEEK3\wednesday.jpg">
+<div class="info">
+<h3>Wednesday</h3>
+<p class="genre">Mystery • Comedy</p>
+<p class="rating">⭐ 8.1/10</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>🎥 MovieVerse Gallery</h3>
+
+<p>Designed using HTML & CSS</p>
+
+</footer>
+
+</body>
+</html>
